@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Timestamp Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="dtg-generator">
+        <div class="header">
+            <img src="logo.png" alt="Logo" id="logo"> <!-- Add your logo here -->
+            <h1>Discord Timestamp Generator</h1>
+            <p>Developed by <a href="https://nomanmohammad.com/" target="_blank" id="developer-link">Noman Mohammad</a></p> <!-- Developer credit -->
+          </div>
+        <div class="container">
+            <div class="container">
+                <span>Date</span><input type="date" id="d">
+                <span>Time</span><input type="time" id="hm">
+                <span>Type</span>
+                <select id="t">
+                    <option value="t">short time</option>
+                    <option value="T">long time</option>
+                    <option value="d">short date</option>
+                    <option value="D">long date</option>
+                    <option value="f">long date with short time</option>
+                    <option value="F">long date with day of week and short time</option>
+                    <option value="R">relative</option>
+                </select>
+                <!-- Enhanced Preview -->
+                <div id="preview"></div>
+                <input type="text" readonly id="code" title="Press Ctrl/Cmd+C to copy">
+                <button id="copy">Copy to clipboard</button>
+                <button id="current">Reset to current time</button>
+            </div>
+          <!-- Existing content -->
+          <button id="feedback">Give Feedback</button>
+          <a href="https://discord.gg/GChNu7kW" target="_blank" id="discord-link">Join our Discord Server</a>
+
+        </div>
+      </div>
+      
+    
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Main container styling */
+#dtg-generator {
+  width: calc(100vw - 40px);
+  max-width: 520px;
+  margin: 5% auto;
+  padding: 2rem; /* Increased padding */
+  background: linear-gradient(145deg, #6af68f, #4CAF50); /* Gradient background */
+  border-radius: 25px; /* Slightly increased border-radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  overflow: hidden;
+}
+
+/* Input fields, select, and buttons styling */
+#dtg-generator input,
+#dtg-generator select,
+#dtg-generator button {
+  width: 100%;
+  padding: 1rem; /* Increased padding */
+  margin-bottom: 1.2rem; /* Adjusted margin */
+  border-radius: 8px; /* Slightly rounded corners */
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Select dropdown styling */
+#dtg-generator select {
+  background-color: #f7f7f7;
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Input text field styling */
+#dtg-generator input[type="text"] {
+  background-color: #ffffff;
+  color: #333;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Button styling */
+#dtg-generator button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold; /* Bold text */
+}
+
+#dtg-generator button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slight scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Enhanced Preview text styling */
+#dtg-generator #preview {
+  font-size: 1.6rem; /* Increased font size */
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #4CAF50;
+  border-radius: 12px; /* Increased border-radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: popIn 0.5s ease-out;
+}
+
+/* Animation for preview */
+@keyframes popIn {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+#dtg-generator #preview:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Alert popup styling */
+#dtg-alert {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#dtg-alert.show {
+  display: block;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+/* Input fields, select, and buttons styling */
+#dtg-generator input, 
+#dtg-generator select, 
+#dtg-generator button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#dtg-generator select {
+  background-color: #f7f7f7;
+}
+
+#dtg-generator input[type="text"] {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: monospace;
+  text-align: center;
+}
+
+#dtg-generator button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dtg-generator button:hover {
+  background-color: #45a049;
+}
+
+/* Enhanced Preview text styling */
+#dtg-generator #preview {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: popIn 0.5s ease-out;
+}
+
+/* Animation for preview */
+@keyframes popIn {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+#dtg-generator #preview:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Alert popup styling */
+#dtg-alert {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#dtg-alert.show {
+  display: block;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* Header styling */
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.header p {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+#developer-link {
+  color: #ffeb3b; /* Highlight color for the link */
+  text-decoration: none;
+}
+
+#developer-link:hover {
+  text-decoration: underline;
+}
+
+
+#feedback {
+  background-color: #ff9800; /* Highlight color */
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#feedback:hover {
+  background-color: #f57c00; /* Darker shade on hover */
+}
+
+
+#discord-link {
+  display: block;
+  text-align: center;
+  color: #3962f8; /* Discord color */
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#discord-link:hover {
+  color: #ffffff; /* Lighter color on hover */
+}
+
+
